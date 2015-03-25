@@ -1,0 +1,185 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Classicthesis-Styled CV
+% LaTeX Template
+% Version 1.0 (22/2/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Alessandro Plasmati
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+\date{}
+
+\documentclass{scrartcl}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+\reversemarginpar % Move the margin to the left of the page 
+
+\newcommand{\MarginText}[1]{\marginpar{\raggedleft\itshape\small#1}} % New command defining the margin text style
+
+\usepackage[nochapters]{classicthesis} % Use the classicthesis style for the style of the document
+\usepackage[LabelsAligned]{currvita} % Use the currvita style for the layout of the document
+
+\renewcommand{\cvheadingfont}{\LARGE\color{Maroon}} % Font color of your name at the top
+
+\usepackage{hyperref} % Required for adding links	and customizing them
+\hypersetup{colorlinks, breaklinks, urlcolor=Maroon, linkcolor=Maroon} % Set link colors
+
+\newlength{\datebox}\settowidth{\datebox}{Spring 2011} % Set the width of the date box in each block
+
+\newcommand{\NewEntry}[3]{\noindent\hangindent=1em\hangafter=0 \parbox{\datebox}{\small \textit{#1}}\hspace{1em} #2 #3 % Define a command for each new block - change spacing and font sizes here: #1 is the left margin, #2 is the italic date field and #3 is the position/employer/location field
+\vspace{0.25em}} % Add some white space after each new entry
+
+\newcommand{\Description}[1]{\hangindent=1em\hangafter=0\noindent\raggedright\footnotesize{#1}\par\normalsize\vspace{0.75em}} % Define a command for descriptions of each entry - change spacing and font sizes here
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\thispagestyle{empty} % Stop the page count at the bottom of the first page
+
+\setlength{\hoffset}{3em}
+\setlength{\voffset}{0.5em}
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{cv}{\spacedallcaps{Mateusz Kubuszok}}\vspace{1.5em} % Your name
+
+\noindent\spacedlowsmallcaps{Personal Information}\vspace{0.5em} % Personal information heading
+
+\NewEntry{}{\textit{Born in Świętochłowice, Poland},}{23 January 1990} % Birthplace and date
+
+\NewEntry{email}{\href{mailto:mateusz.kubuszok@gmail.com}{mateusz.kubuszok@gmail.com}} % Email address
+
+\NewEntry{website}{\href{http://github.com/MateuszKubuszok}{http://github.com/MateuszKubuszok}} % Personal website
+
+\NewEntry{phone}{+48 784 929 440} % Phone number(s)
+
+\vspace{1em} % Extra white space between the personal information section and goal
+
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\noindent\spacedlowsmallcaps{Work Experience}\vspace{1em}
+
+\NewEntry{Mar,\,2014--Now}{Developer, \textsc{Opera Software ASA} --- Wrocław}
+
+\Description{\MarginText{Opera Software ASA}
+\textsc{C++}.
+Working on desktop version of company's flag product, Opera browser.}
+
+%------------------------------------------------
+
+\NewEntry{Oct,\,2012--Jul,\,2013}{Intern, \textsc{Nokia Siemens Networks} --- Wrocław}
+
+\Description{\MarginText{Nokia Siemens Networks}
+\textsc{Java SE/EE}.
+Participated in work on internal dimensioning tool.
+Introduced autoupdater to said project's default update tool.}
+
+%------------------------------------------------
+
+\NewEntry{Jun,\,2012}{Intern, \textsc{PGS Software} --- Wrocław}
+
+\Description{\MarginText{PGS Software}
+\textsc{Java EE}.
+Worked on server application built with Spring Framework, Hibernate and jQuery technologies.}
+
+%------------------------------------------------
+
+\NewEntry{Feb,\,2012--Jul,\,2012}{Academic Project}
+
+\Description{\MarginText{Academic Project}
+\textsc{Java EE}.
+Developed repository for a generic software updater.
+Project overviewed by Nokia Siemens Networks.}
+
+%------------------------------------------------
+
+\vspace{1em} % Extra space between major sections
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+\spacedlowsmallcaps{Education}\vspace{1em}
+
+\NewEntry{2013--2014}{Wrocław University of Technology, Wrocław}
+
+\Description{\MarginText{Master of Science}GPA: 4.0\ \ $\cdotp$\ \ \textit{Algorithmics}\ \ $\cdotp$\ \ Faculty of Fundamental Problem of Technology\newline 
+Thesis: \textit{Tools for calculating Nash equlibria in finite games}\newline
+Description: This thesis concerned creation of equlibria-calculating tools and algorithms used to find them.}
+
+%------------------------------------------------
+
+\NewEntry{2009--2013}{Wrocław University of Technology, Wrocław}
+
+\Description{\MarginText{Bachelor of Science}GPA: 4.5\ \ $\cdotp$\ \ Faculty of Fundamental Problem of Technology\newline 
+Thesis: \textit{Client of autoupdater server}\newline
+Description: This thesis concerned creation of a generic updater client.}
+
+%------------------------------------------------
+
+\vspace{1em} % Extra space between major sections
+
+%----------------------------------------------------------------------------------------
+%	COMPUTER SKILLS
+%----------------------------------------------------------------------------------------
+
+\spacedlowsmallcaps{Computer Skills}\vspace{1em}
+
+\Description{\MarginText{Advanced}\textsc{Java SE}, \textsc{C++}, design patterns}
+
+\Description{\MarginText{Intermediate}\textsc{Python}, \textsc{Ruby}, \textsc{Linux}, \textsc{MS Windows}, \textsc{Git}, \textsc{SVN}, \textsc{SQL}}
+
+\Description{\MarginText{Basic}\textsc{Clojure}, \textsc{JavaScript}, \textsc{shell}, \textsc{Java EE}, \textsc{Hibernate}}
+
+%------------------------------------------------
+
+\vspace{1em} % Extra space between major sections
+
+%----------------------------------------------------------------------------------------
+%	OTHER INFORMATION
+%----------------------------------------------------------------------------------------
+
+\spacedlowsmallcaps{Other Information}\vspace{1em}
+
+
+\newlength{\langbox} % Create a new length for the length of languages to keep them equally spaced
+\settowidth{\langbox}{English} % Length equals the length of "English" - if you have a longer language in your list put it here
+
+\Description{\MarginText{Languages}\parbox{\langbox}{\textsc{Polish}}\ \ $\cdotp$\ \ \ Mothertongue}
+
+\vspace{-0.5em} % Negative vertical space to counteract the vertical space between every \Description command
+
+\Description{\parbox{\langbox}{\textsc{English}}\ \ $\cdotp$\ \ \ Advanced (professional proficiency)}
+
+\vspace{-0.5em} % Negative vertical space to counteract the vertical space between every \Description command
+
+
+%------------------------------------------------
+
+\Description{\MarginText{Interests}Computer Science\ \ $\cdotp$\ \ Fantasy\ \ $\cdotp$\ \ Workouts\ \ $\cdotp$\ \ Running\ \ $\cdotp$\ \ Dancing}
+
+%----------------------------------------------------------------------------------------
+
+\end{cv}
+
+\tiny{I hereby declare that all the facts and information for this cover letter and CV are true. I allow my personal data stated in the abovemnetioned applications to be processed for the purpose of recruitment, in accordance with the Personal Data Protection Act dated 29/08/1997 (Dz. Ust. No. 133, item 883)}
+
+\end{document}
