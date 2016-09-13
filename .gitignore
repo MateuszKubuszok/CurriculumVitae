@@ -1,0 +1,6 @@
+# Tex output
+*.aux
+*.log
+*.out
+*.pdf
+*.synctex.gz
