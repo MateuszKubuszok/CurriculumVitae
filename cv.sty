@@ -1,0 +1,29 @@
+\ProvidesPackage{cv}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+\reversemarginpar
+
+\newcommand{\Highlight}[1]{{\color{Maroon}#1}}
+
+\newcommand{\SecHeader}[1]{\Highlight{\spacedlowsmallcaps{#1}}\vspace{1em}}
+
+\newcommand{\Dot}{\Highlight{$\cdotp$}}
+
+\newcommand{\MarginText}[1]{\marginpar{\raggedleft\itshape\small\Highlight{#1}}}
+
+\usepackage[nochapters]{classicthesis}
+\usepackage[LabelsAligned]{currvita}
+
+\renewcommand{\cvheadingfont}{\LARGE\color{Maroon}}
+
+\usepackage{hyperref}
+\hypersetup{colorlinks, breaklinks, urlcolor=Maroon, linkcolor=Maroon}
+
+\newlength{\datebox}\settowidth{\datebox}{Spring 2011}
+
+\newcommand{\NewEntry}[3]{\noindent\hangindent=1em\hangafter=0 \parbox{\datebox}{\small \textit{#1}}\hspace{1em} \Highlight{#2}#3
+\vspace{0.25em}}
+
+\newcommand{\Description}[1]{\hangindent=1em\hangafter=0\noindent\raggedright\footnotesize{#1}\par\normalsize\vspace{0.75em}}
