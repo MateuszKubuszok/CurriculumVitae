@@ -1,15 +1,3 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-% Based on "Classicthesis-Styled CV"
-%  by: Alessandro Plasmati
-%  DL from: www.LaTeXTemplates.com
-%
-% License:
-% CC BY-NC-SA 3.0
-% creativecommons.org/licenses/by-nc-sa/3.0/
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 \date{}
 \documentclass{scrartcl}
 \usepackage{cv}
@@ -19,7 +7,7 @@
 
 \begin{document}
 
-\thispagestyle{empty} % Stop the page count at the bottom of the first page
+\pagestyle{empty} % Stop the page count at the bottom of the first page
 
 \setlength{\hoffset}{4em}
 \setlength{\voffset}{2em}
@@ -36,16 +24,11 @@
 
 \NewEntry{website}{}{\href{https://kubuszok.com/}{https://kubuszok.com/}}
 
-\NewEntry{GitHub}{}{\href{https://github.com/MateuszKubuszok}{https://github.com/MateuszKubuszok}}
+\NewEntry{GitHub}{}{\href{https://github.com/MateuszKubuszok/}{https://github.com/MateuszKubuszok/}}
 
 \NewEntry{Linked.in}{}{\href{https://linkedin.com/in/mateuszkubuszok/}{https://linkedin.com/in/mateuszkubuszok/}}
 
-\NewEntry{phone}{}{+48 784 929 440}
-
-\MarginText{\includegraphics[scale=0.6, clip=true, trim=15 0 15 5]{photo.jpg}}
-
 \vspace{1em}
-
 
 %----------------------------------------
 %  WORK EXPERIENCE
@@ -55,13 +38,13 @@
 
 %----------------------------------------
 
-\NewEntry{Jun,\,2015--Now}{Self-employed}{, \textsc{ComboSolutions} --- Żory}
+\NewEntry{Oct,\,2020--Feb,\,2023}{Senior BE Developer}{, \textsc{SwissBorg} --- Żory (remote)}
 
-\Description{\MarginText{ComboSolutions} Self-employment.}
+\Description{\MarginText{SwissBorg SA} \textsc{Scala}. Backend Developer: Scala, Cats Effect, Akka Typed, Akka Stream, Akka Cluster, Kafka, Protobufs. Developed advertizing app (CryptoChallenge) backend, co-architected critical service, developed internal tools and DX enhancements based on metaprogramming.}
 
 %----------------------------------------
 
-\NewEntry{Aug,\,2018--Nov,\,2019}{Backend Developer}{, \textsc{Coya AG} --- Wrocław (remote)}
+\NewEntry{Aug,\,2018--Nov,\,2019}{Senior BE Developer}{, \textsc{Coya} --- Wrocław (remote)}
 
 \Description{\MarginText{Coya AG} \textsc{Scala}. Backend Developer: Scala, Monix, Doobie, AWS Kinesis,
 AWS DynamoDB, Akka Streams, Akka HTTP. Contributed to architecture designing and planning, made internal
@@ -69,13 +52,13 @@ Scala and FP workshops. Domain Driven Design.}
 
 %----------------------------------------
 
-\NewEntry{Feb,\,2018--Jul,\,2018}{Backend Developer}{, \textsc{Order Metrics Inc.} --- Wrocław (remote)}
+\NewEntry{Feb,\,2018--Jul,\,2018}{BE Developer}{, \textsc{Order Metrics} --- Wrocław (remote)}
 
 \Description{\MarginText{Order Metrics Inc.} \textsc{Scala}. Working as a backend developer: REST, running scheduled tasks, migations. Occasionally small frontend tasks. Play Framework, Akka Stream, Monix, Slick, FlywayDB, PostgreSQL, sbt, node, React + Redux, Heroku, AWS (EC2).}
 
 %----------------------------------------
 
-\NewEntry{Mar,\,2017--Jan,\,2018}{CTO, Backend Developer}{, \textsc{Skillhouse.io} --- Wrocław (remote)}
+\NewEntry{Mar,\,2017--Jan,\,2018}{CTO, BE Developer}{, \textsc{Skillhouse.io} --- Wrocław}
 
 \Description{\MarginText{Skilhouse.io} \textsc{Scala}. Internally, working as a backend developer and an architect: developed whole backend and designed REST API for frontend. Externally, acting as a CTO. Akka HTTP, Akka Stream, Cats, Monix, Slick, FlywayDB, sbt, PostgreSQL, AWS (EBS, RDS).}
 
@@ -87,7 +70,7 @@ Scala and FP workshops. Domain Driven Design.}
 
 %----------------------------------------
 
-\NewEntry{Mar,\,2014--May,\,2015}{Developer}{, \textsc{Opera Software ASA} --- Wrocław}
+\NewEntry{Mar,\,2014--May,\,2015}{Developer}{, \textsc{Opera Software} --- Wrocław}
 
 \Description{\MarginText{Opera Software ASA} \textsc{C++}. Working on desktop version of company's flag product, Opera browser. Chromium, GYP.}
 
@@ -99,21 +82,17 @@ Scala and FP workshops. Domain Driven Design.}
 
 %----------------------------------------
 
+\newpage
+
 \NewEntry{Jun,\,2012}{Intern}{, \textsc{PGS Software} --- Wrocław}
 
 \Description{\MarginText{PGS Software} \textsc{Java EE}. Worked on server application built with Spring Framework, Hibernate and jQuery technologies.}
 
 %----------------------------------------
 
-\NewEntry{Feb,\,2012--Jul,\,2012}{Developer}{, Academic Project}
+\NewEntry{Feb,\,2012--Jul,\,2012}{Developer}{, Academic Project --- Wrocław}
 
 \Description{\MarginText{Academic Project} \textsc{Java EE}. Developed repository for a generic software updater. Project overviewed by Nokia Siemens Networks.}
-
-%----------------------------------------
-
-%\vspace{0.5em} % Extra space between major sections
-\newpage
-\thispagestyle{empty}
 
 %----------------------------------------
 %  EDUCATION
@@ -145,6 +124,12 @@ Description: This thesis concerned creation of a generic updater client.}
 
 %----------------------------------------
 
+\NewEntry{eBook}{\href{https://leanpub.com/jvm-scala-book/}{\small Things you need to know about JVM}}{}
+
+\Description{\MarginText{Publications}An introduction to JVM, GC, byte-code and how it affects Scala language.}
+
+%----------------------------------------
+
 \NewEntry{Blog}{\href{https://kubuszok.com/}{Kubuszok.com}}{}
 
 \Description{\MarginText{Publications}Writing in-depth articles about Scala and functional programming.}
@@ -153,19 +138,19 @@ Description: This thesis concerned creation of a generic updater client.}
 
 \NewEntry{Scala libraries}{\href{https://scalaland.io/}{Scalaland.io}}{}
 
-\Description{\MarginText{Open Source}Coauthoring a set of various utilities for Scala language, among others data-transformation library \href{https://scalalandio.github.io/chimney/}{Chimney} (over 500 stars on GitHub).}
+\Description{\MarginText{Open Source}Coauthoring a set of various utilities for Scala language, among others data-transformation library \href{https://scalalandio.github.io/chimney/}{Chimney} (over 900 stars on GitHub).}
 
 %----------------------------------------
 
-\NewEntry{Meetups and conferences}{Prelections and workshops about Scala}{}
+\NewEntry{Meetups and conferences}{\href{https://kubuszok.com/presentations}{Prelections and workshops about Scala}}{}
 
-\Description{\MarginText{Prelections}Made prelections on meetups (London Functional Programmers, Functional Tricity, ScalaWAW, Kraków JUG) and conferences (Scalar), as well as workshops (ScalaWave, Lambda Days) on Scala and Scala libraries.}
+\Description{\MarginText{Prelections}Made prelections on meetups (London Functional Programmers, Functional Tricity, ScalaWAW, Kraków JUG) and conferences (Scalar, Lambda Days), as well as workshops (ScalaWave, Lambda Days) on Scala and Scala libraries.}
 
 %----------------------------------------
 
 \NewEntry{Knowledge sharing}{\href{https://stackoverflow.com/users/1305121/mateusz-kubuszok}{Active StackOverflow member}}{}
 
-\Description{\MarginText{StackOverflow}Gained over 7000 reputation by helping other community members solve their techinical issues.}
+\Description{\MarginText{StackOverflow}Gained over 23000 reputation by helping other community members solve their techinical issues.}
 
 %----------------------------------------
 
@@ -194,7 +179,7 @@ Description: This thesis concerned creation of a generic updater client.}
 
 %----------------------------------------
 
-\Description{\MarginText{Interests}Computer Science\ \ \Dot\ \ Fantasy\ \ \Dot\ \ Workouts\ \ \Dot\ \ Running\ \ \Dot\ \ Dancing}
+\Description{\MarginText{Interests}Computer Science\ \ \Dot\ \ Comparative religion\ \ \Dot\ \ Hiking\ \ \Dot\ \ Running\ \ \Dot\ \ Cycling}
 
 %----------------------------------------
 
